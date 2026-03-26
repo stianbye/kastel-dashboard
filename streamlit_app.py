@@ -14,7 +14,7 @@ import pandas as pd
 
 # ── Config ────────────────────────────────────────────────────────────────────
 SHOP    = "kastel-shoes.myshopify.com"
-TOKEN   = st.secrets.get("SHOPIFY_TOKEN", "6050b0963a3b59837b598922fd15e204")
+TOKEN   = st.secrets["SHOPIFY_TOKEN"]
 VERSION = "2024-10"
 HEADERS = {"X-Shopify-Access-Token": TOKEN}
 BASE    = f"https://{SHOP}/admin/api/{VERSION}"
