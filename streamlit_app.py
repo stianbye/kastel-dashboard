@@ -542,12 +542,8 @@ with c5:
         x=0.5, y=0.5, showarrow=False,
         font=dict(size=15, color="#e8e4dc", family="Inter"),
     )
-    fig_donut.update_layout(
-        **DARK,
-        height=115,
-        margin=dict(l=0, r=0, t=0, b=0),
-        showlegend=False,
-    )
+    fig_donut.update_layout(**DARK, height=115, showlegend=False)
+    fig_donut.update_layout(margin=dict(l=0, r=0, t=0, b=0))
 
     ret_chg = pct(ret_c, ly_ret)
     new_chg = pct(new_c, ly_new)
@@ -624,7 +620,7 @@ with b2:
 <div class="b2b-soon">
   <div class="b2b-icon">🏪</div>
   <div class="b2b-label">Topp B2B-kunder</div>
-  <div>Topp 5 kunder med fakturert omsetning MTD og vs. i fjor vises her når Tripletex er koblet til.</div>
+  <div>Topp 5 kunder med fakturert omsetning MTD og vs. i fjor gises her når Tripletex er koblet til.</div>
 </div>""", unsafe_allow_html=True)
 
 
